@@ -16,3 +16,5 @@ elif wiek_pythona < int(wiek):
     print ('Jestem młodszy!')
 else:
     print('Mamy tyle samo lat')
+
+
