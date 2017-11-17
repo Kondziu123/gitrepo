@@ -18,7 +18,12 @@ def main(args):
     # i przypisz ja do zmiennej
     # wywołaj funkcje silnia it() z odpowiednim argumentem
     n = int(input('Podaj liczbe: '))
-    print(silnia_it(n))
+    assert type(n) == int
+    assert silnia_it(0) == 1
+    assert silnia_it(1) == 1
+    assert silnia_it(2) == 2
+    assert silnia_it(3) == 6
+    # print(silnia_it(n))
     return 0
 
 
