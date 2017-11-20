@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  nwd.py
+#  Euklides.py
 
 
 def main(args):
