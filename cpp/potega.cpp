@@ -20,6 +20,11 @@ float potega_it(float x, int n) {
     return wynik;    
 } 
 
+int potega_rek(int a,int n);
+    if n == 0
+        return 1;
+    return potega_rek(a, n - 1) * a; 
+
 int main(int argc, char **argv)
 {
     float x= 0;

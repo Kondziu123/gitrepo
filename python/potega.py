@@ -13,6 +13,13 @@ def potega_it(x, n):
         return wynik
 
 
+# potęga _rek(a, n)= 1 dla a różnego od 0
+# potęga _rek(a, n)= potega_rek(a, n - 1) * a dla n =  
+def potega_rek(a, n):
+    if n == 0:
+        return 1
+    return potega_rek(a, n - 1) * a 
+ 
 def main(args):
     x = float(input('Podaj podstawowe potegi: '))
     n = int(input('Podaj wykładnik potęgi: '))
