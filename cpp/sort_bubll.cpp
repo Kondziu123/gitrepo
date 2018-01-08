@@ -31,12 +31,11 @@ void zamien (int &a, int &b){
 void sort_wyb(int t[], int n){
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n - 1 - i; j++){
-                if (tab[k] > tab[j + 1])
-                    zamien(tab[j], tab[j + 1]):
+            if (tab[k] > tab[j + 1])
+                zamien(tab[j], tab[j + 1]):
         }
     }
 }
-
 
 
 int main(int argc, char **argv)
@@ -45,7 +44,7 @@ int main(int argc, char **argv)
     int tab[ile];
     wypelnij(tab, ile, 20);
     drukuj(tab, ile);
-    sort_bubll(tab, ile);
+    sort_wyb(tab, ile);
     drukuj(tab, ile);
     return 0;
 }
