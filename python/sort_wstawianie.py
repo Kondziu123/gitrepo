@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  sort_wyb.py
+#  sort_wstawianie.py
 #  
-
+from math import floor
 
 def sort_wstaw(lista):
     for i in range(1,len(lista)):
@@ -16,11 +16,22 @@ def sort_wstaw(lista):
     return lista
 
 
-def sort_wstaw_bin(lista)
+def szukaj_bin(l, p, lista, el):
+    while l < p:
+        srodek = floor((l + p) / 2)
+        if el <= lista(srodek):
+            p = srodek
+        else:
+            l = srodek + 1
+    return l
+
+def sort_wstaw_bin(lista):
     for i in range(1,len(lista)):
         el = lista[i]
         k = szukaj_bin(0, i, lista, el)
-        pass
+        lista = lista[:k] + [el] + lista[k:i] + lista[i + 1:]
+        print(lista)
+    return lista
         
         
 def main(args):
