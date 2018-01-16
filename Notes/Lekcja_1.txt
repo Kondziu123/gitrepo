@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-11T08:19:21+01:00
+
+====== Lekcja 1 ======
+Created czwartek 11 styczeń 2018
+**Złozoność pamięciowa  algorytmu**
+- jak dużo potrzeba pamięci do wykonania algorytmu. 
+-Algorytmy rekurencyjne są bardziej złozone pamieciowo od interacyjnych        
+
+**Złorzoność czasowa algorytmu**
+**-**nie zależy od tego w jakim czasie wykona sie algorytm
+- nie zależy ile operacji zostanie wykonana
+
+**Efektowność algorytmu**
+-algorytm który bierze pod uawge praktyczne zastosowanie algorytmu w programie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
