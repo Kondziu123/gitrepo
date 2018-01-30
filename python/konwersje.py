@@ -31,12 +31,37 @@ def dec2other():
         liczba, konwersja1(liczba, podstawa), podstawa))
 
 
+def konwersja2(liczba, podstawa):
+    liczba10 = 0
+    potega = len(liczba) - 1
+    for cyfra in liczba:
+        if not cyfra.isdigit():
+            liczba10 += (ord(cyfra.upper()) - 55) * (podastawa ** potega)
+        liczba10 += int(cyfra * (podstawa ** potega))
+        potega -= 1
+    return liczba
+
+def other2dec ():
+    podstawa = int(input("Podaj podstawe: "))
+    liczba = int(input("Podaj liczbę: "))
+    for i in liczba:
+        if i.isdigit():
+            cyfra = int(i)
+        else:
+            cyfra = ord(i.upper()) - 55
+        if cyfra > podstawa - 1:
+            print("Podałeś niedopuszczlną liczbe!")
+        return 
+    print("Wynik konwersji: {}[10]".format(konwersja2(liczba, podstawa)))
+    
+    
 def main(args):
     print("Zamiana liczby dziesiettnej o podanej podstawie"
         "<2;16> lub odwrotnie.")
     dec2other()
     other2dec()
     return 0
+
 
 if __name__ == '__main__':
     import sys
